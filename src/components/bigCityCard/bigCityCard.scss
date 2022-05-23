@@ -1,0 +1,48 @@
+@import '../../assets/scss/variables.scss';
+
+.big-city-card {
+  width: 450px;
+  margin: 20px auto;
+  border-radius: 20px;
+
+  &__title {
+    font-family: $ff-simple;
+    font-size: $fs-title;
+    font-weight: $fw-700;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    &-description{
+      display: flex;
+      justify-content: center;
+      line-height: 25px;
+      font-family: $ff-simple;
+      font-size: $fs-text;
+      font-weight: $fw-700;
+    }
+    &-weather {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-img {
+      max-width: 60px;
+      height: 60px;
+    }
+
+    &-temp{
+      font-size: 52px;
+      $ff-simple: 'Roboto', sans-serif;
+      $fw-700: 700;
+    }
+
+    &-details {
+      display: flex;
+      flex-direction: column;
+    }
+    
+  }
+}

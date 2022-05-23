@@ -1,0 +1,70 @@
+@import '../../assets/scss/variables.scss';
+
+.city-card{
+  text-decoration: 'none';
+  position: relative;
+  &__hover :hover{
+    background: $clr-bg-lt-city-hr;
+  }
+  &__area-btns{
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+&__icons{
+  fill: grey;
+  width: 20px;
+  height: 20px;
+}
+&__area-icons :hover{
+  fill: red;
+}
+
+&__wrapper {
+  width: 170px;
+  min-height: 200px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    margin-top: -15px;
+    font-family: $ff-simple;
+    font-size: $fs-title;
+    font-weight: $fw-700;
+  }
+}
+.city-card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &_img {
+      width: 70px;
+      height: 90px;
+    }
+
+    &_temp {
+      font-size: 34px;
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+
+    &_btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 160px;
+      background: transparent;
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+
+  &__text-field {
+    width: 300px;
+  }
+
+  &__btn {
+    height: 56px;
+  }
+}
