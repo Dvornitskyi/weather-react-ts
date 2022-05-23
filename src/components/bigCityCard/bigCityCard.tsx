@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React from 'react';
 import { Card, CardContent } from '@mui/material';
 import { IBigCityCardProps } from './type';
@@ -11,8 +12,6 @@ export const BigCityCard = ({
   feels_like,
   pressure,
   humidity,
-  temp_min,
-  temp_max,
   name,
 }: IBigCityCardProps)  => {
   return (
@@ -33,6 +32,7 @@ export const BigCityCard = ({
             <span className='big-city-card__content-description'>Humidity: {humidity} %</span> 
             <span className='big-city-card__content-description'>Feels like {Math.round(feels_like)}°</span>
           </div>
+
         </CardContent>
       </Card>
     </div>

@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { BigCityCard } from '../../components/bigCityCard/bigCityCard';
@@ -6,7 +7,6 @@ import store from '../../redux/store';
 import { useParams } from 'react-router-dom';
 import { fetchDetailyWeatherAction } from '../../redux/detailWeather/detailWeatherApi';
 import { fetchHourlyWeatherAction } from '../../redux/weatherHourly/weatherHourlyApi';
-import { hourlyListSelector } from '../../redux/weatherHourly/weatherHourlySelector';
 import { coordinateSelector, detailWeatherSelector } from '../../redux/detailWeather/detailWeatherSelector';
 import './detailInfo.scss';
 
